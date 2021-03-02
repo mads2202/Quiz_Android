@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GeoQuize</string>
+    <string name="question_text">Канбера Столица Австралии</string>
+    <string name="true_button">Правда</string>
+    <string name="false_button">Не правда</string>
+    <string name="correct_toast">Правильно</string>
+    <string name="incorrect_toast">Не Правильно</string>
+
+    
+</resources>

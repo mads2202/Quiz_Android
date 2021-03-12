@@ -1,10 +1,23 @@
 <resources>
     <string name="app_name">GeoQuize</string>
-    <string name="question_text">Канбера Столица Австралии</string>
+    <string name="question_australia">Канбера столица Австралии</string>
+    <string name="question_france">Париж столица Франции</string>
+    <string name="question_germany">Берлин столица Германии</string>
+    <string name="question_poland">Варшава столица Польши</string>
+    <string name="question_australia_wrong">Сидней Столица Австралии</string>
+    <string name="question_poland_wrong">Краков столица Польши</string>
+    <string name="question_italy">Рим столица Италии</string>
+    <string name="question_italy_wrong">Милан столица Италии</string>
+
     <string name="true_button">Правда</string>
     <string name="false_button">Не правда</string>
     <string name="correct_toast">Правильно</string>
     <string name="incorrect_toast">Не Правильно</string>
+    <string name="next_question">Следующий вопрос</string>
+    <string name="previous_question">Предыдущий вопрос</string>
+    <string name="cheat_button">Посмотреть ответ</string>\
+    <string name="cheat_toast">Жульничать очень плохо!</string>
+    <string name="show_answer_button">Показать ответ</string>
 
-    
+
 </resources>

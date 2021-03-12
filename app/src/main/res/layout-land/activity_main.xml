@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+
+    >
 
     <TextView
         android:id="@+id/scoreTextField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp" />
 
     <TextView
         android:id="@+id/textField"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
         android:padding="25dp" />
+
+
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:orientation="horizontal">
 
         <Button
@@ -46,32 +51,45 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/previous_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+        <Button
+            android:id="@+id/cheat_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/arrow_left"
-            android:drawablePadding="4dp"
+            android:layout_gravity="center"
+            android:text="@string/cheat_button"/>
 
-            android:contentDescription="@string/previous_question" />
-        <ImageButton
-            android:id="@+id/next_button"
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/arrow_right"
-            android:drawablePadding="4dp"
-            android:contentDescription="@string/next_question"/>
+            android:layout_gravity="bottom|center"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/previous_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/previous_question"
+                android:drawablePadding="4dp"
+
+                android:src="@drawable/arrow_left" />
+
+            <ImageButton
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/next_question"
+                android:drawablePadding="4dp"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
     </LinearLayout>
-    <Button
-        android:id="@+id/cheat_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cheat_button"
-        />
-</LinearLayout>
+
+</FrameLayout>
